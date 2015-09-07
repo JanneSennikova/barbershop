@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Каталог :: Барбершоп "Бородинский"</title>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <header class="main_header">
@@ -22,7 +24,7 @@
                         <a href="#">ПРАЙС-ЛИСТ</a>
                     </li>
                     <li>
-                        <a href="#" class="active">МАГАЗИН</a>
+                        <a herf="#" class="active">МАГАЗИН</a>
                     </li>
                     <li>
                         <a href="#">КОНТАКТЫ</a>
@@ -46,14 +48,14 @@
                     <li>
                         <a href="#">МАГАЗИН</a>
                     </li>
-                    <li class="activ">
+                    <li class="active">
                         СРЕДСТВА ДЛЯ УХОДА
                     </li>
                 </ul>
             </div>
         </header>
-            <form class="manufacturer">
-                <fieldset class="manufacturer">
+            <form class="product_filter">
+                <fieldset class="proizv">
                     <legend>ПРОИЗВОДИТЕЛИ</legend>
                     <ul>
                         <li>
@@ -90,36 +92,31 @@
                         </li>
                     </ul>
                 </fieldset>
-                <div class="button show">
-                    <a href="#" class="batton">ПОКАЗАТЬ</a>
-                </div>
+                    <a href="#" class="batton_show">ПОКАЗАТЬ</a>
             </form>
         <section class="content">
-            <div class="items">
-                <article class="products_item">
-                    <img src="http://placehold.it/150x100" alt="Набор для путешествий BAXTER OF CALIFORNIA" />
-                    <a href="#">
+            <article class="products_item">
+                    <a href="/barbershop-item.html">
+                    <img src="img/baxter_of_california_tervel_kit.jpg" alt="Набор для путешествий BAXTER OF CALIFORNIA" />
                         <p class="item_title">
                             Набор для путешествий
-                        </p>
-                        <span class="proizv_name">
+                        <br />
                             "BAXTER OF CALIFORNIA"
-                        </span>
+                        </p>
                     </a>
                     <div class="add_to_cart_section">
                         <div class="cost">
                             2 900 РУБ
-                            <a href="#" class="button button_buy">"КУПИТЬ"</a>
+                            <a href="#" class="button_buy">"КУПИТЬ"</a>
                         </div>
                     </div>
                 </article>
                 <article class="products_item">
-                    <img src="http://placehold.it/150x100" alt="Увлажняющий кондиционер BAXTER OF CALIFORNIA" />
-                    <a href="#">
+                    <a href="/barbershop-item.html">
+                        <img src="img/baxter_of_california_confition.jpg" alt="Увлажняющий кондиционер BAXTER OF CALIFORNIA" />
                         <p class="item_title">
                         Увлажняющий кондиционер
-                        </p>
-                        <p class="proizv_name">
+                        <br />
                             "BAXTER OF CALIFORNIA"
                         </p>
                     </a>
@@ -131,11 +128,11 @@
                     </div>
                 </article>
                 <article class="products_item">
-                    <img src="http://placehold.it/150x100" alt="Гель для волос SAUVECITO" />
-                    <a href="#">
+                    <a href="/barbershop-item.html">
+                    <img src="img/hair_gel_SAUVECITO.jpg" alt="Гель для волос SAUVECITO" />
                         <p class="item_title">
                             Гель для волос
-                        <p class="proizv_name">
+                        <br />
                             "SAUVECITO"
                         </p>
                     </a>
@@ -147,12 +144,11 @@
                     </div>
                 </article>
                 <article class="products_item">
-                    <img src="http://placehold.it/150x100" alt="Глина для укладки волос AMERICAN CREW" />
-                    <a href="#">
+                    <a href="/barbershop-item.html">
+                    <img src="img/hair_glina_AMERICAN%20CREW.jpg" alt="Глина для укладки волос AMERICAN CREW" />
                         <p class="item_title">
                             Глина для укладки волос
-                        </p>
-                        <p class="proizv_name">
+                        <br />
                             "AMERICAN CREW"
                         </p>
                     </a>
@@ -164,12 +160,11 @@
                     </div>
                 </article>
                 <article class="products_item">
-                    <img src="http://placehold.it/150x100" alt="Гель для волос AMERICAN CREW" />
-                    <a href="#">
+                    <a href="/barbershop-item.html">
+                    <img src="img/hair_gel_AMERICAN%20CREW.jpg" alt="Гель для волос AMERICAN CREW" />
                         <p class="item_title">
                             Гель для волос
-                        </p>
-                        <p class="proizv_name">
+                        <br />
                             "AMERICAN CREW"
                         </p>
                     </a>
@@ -181,12 +176,11 @@
                     </div>
                 </article>
                 <article class="products_item">
-                    <img src="http://placehold.it/150x100" alt="Набор для бритья BAXTER OF CALIFORNIA" />
-                    <a href="#">
+                    <a href="/barbershop-item.html" class="products_item">
+                    <img src="img/baxter_of_california_shave_kit.jpg" alt="Набор для бритья BAXTER OF CALIFORNIA" />
                         <p class="item_title">
                             Набор для бритья
-                        </p>
-                        <p class="proizv_name">
+                        <br />
                             "BAXTER OF CALIFORNIA"
                         </p>
                     </a>
@@ -199,7 +193,7 @@
                 </article>
                 <div class="paginator">
                     <a herf="#" class="button_pages">1</a>
-                    <a herf="#" class="button_pages active">2</a>
+                    <a herf="#" class="button_pages_active">2</a>
                     <a herf="#" class="button_pages">3</a>
                     <a herf="#" class="button_pages">4</a>
                 </div>
@@ -218,22 +212,24 @@
                 </p>
             </div>
             <div class="social">
-                <div class="social title">ДАВАЙТЕ ДРУЖИТЬ!</div>
+                <div class="social_title">ДАВАЙТЕ ДРУЖИТЬ!</div>
                 <div class="social_icon">
                     <a href="#">
-                        <img src="http://placehold.it/40x40" alt="vk" class="footer_soc_icon" />
+                        <img src="img/icon/vk.jpg" alt="vk" class="footer_soc_icon" />
                     </a>
                     <a href="#">
-                        <img src="http://placehold.it/40x40" alt="fb" class="footer_soc_icon" />
+                        <img src="img/icon/fb.jpg" alt="fb" class="footer_soc_icon" />
                     </a>
                     <a href="#">
-                        <img src="http://placehold.it/40x40" alt="inst" class="footer_soc_icon" />
+                        <img src="img/icon/inst.jpg" alt="inst" class="footer_soc_icon" />
                     </a>
                 </div>
                 <div class="developed">
-                    <div class="developed title">
+                    <div class="developed_title">
                         РАЗРАБОТАНО:
-                        <a href="http://htmlacademy.ru/" class="button developed">HTMLACADEMY.RU</a>
+                    </div>
+                    <div>
+                        <a href="http://htmlacademy.ru/" class="button_developed">HTMLACADEMY.RU</a>
                     </div>
                 </div>
             </div>

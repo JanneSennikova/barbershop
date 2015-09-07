@@ -1,0 +1,131 @@
+body {
+ font-family: "PT Sans Narrow";
+    color: #000;
+}
+h2 {
+    font-size: 24px;
+}
+.main_header {
+    background-color: black;
+    font-size: 16px;
+    font-weight: 700;
+
+}
+.main_header a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.main_header h1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+.breadcrumbs {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+    color: #000000;
+}
+.active {
+    color: #aba9a7;
+}
+.product_filter legend {
+    font-size: 24px;
+    font-weight: 700;
+}
+.product_filter label {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.batton_show {
+    background-color: #000000;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+}
+.products_item {
+    font-size: 14px;
+    font-weight: 700;
+
+}
+.products_item a {
+    text-decoration: none;
+}
+a>.item_title {
+    color: #000000;
+}
+
+.button_buy {
+    background-color: #000000;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+}
+.paginator {
+    font-size: 14px;
+    font-weight: 700;
+}
+.button_pages {
+    background-color: #000000;
+    text-decoration: none;
+    color: #ffffff;
+}
+.button_pages_active {
+    background-color: #ffffff;
+    text-decoration: none;
+    color: #000000;
+}
+.contacts {
+    background-color: #212121;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+}
+.contacts a {
+    color: white;
+    text-decoration: none
+}
+.social_title {
+    background-color: #212121;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+}
+.developed {
+    font-size: 14px;
+    font-weight: 700;
+}
+.developed_title {
+    background-color: #212121;
+    color: white;
+}
+.button_developed {
+    background-color: #000000;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+}
+.item_description {
+    font-size: 14px;
+    font-weight: 700;
+    color: black;
+}
+.articul {
+    color: #aeaeae;
+}
+.big_img img {
+    width: 461px;
+}
+.small_img img{
+    width: 139px;
+}
+.products_item img {
+    width: 220px;
+}
