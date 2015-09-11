@@ -2,13 +2,29 @@ body {
  font-family: "PT Sans Narrow";
     color: #000;
 }
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
 h2 {
     font-size: 24px;
 }
+.container {
+    width: 960px;
+    margin: 0 auto;
+    /*shema*/
+    outline: 1px solid aqua;
+    padding: 10px;
+}
+/* HEADER */
 .main_header {
-    background-color: black;
+    background-color: grey;
     font-size: 16px;
     font-weight: 700;
+    /*shema*/
+    padding: 5px 0;
+    outline: 1px solid red;
 
 }
 .main_header a {
@@ -20,38 +36,146 @@ h2 {
     font-size: 30px;
     font-weight: 700;
 }
+
+/* TOP NAVIGATION */
+.main_navigation {
+    float: left;
+    width: 665px;
+    /*shema*/
+    outline: 1px solid green;
+}
+.main_navigation ul {
+    padding: 0;
+    margin: 0;
+}
+.main_navigation li {
+    display: inline-block;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.main_navigation li:last-child {
+    margin-right: 0;
+}
+.user_block {
+    float: right;
+    width: 90px;
+    /*shema*/
+    outline: 1px solid navy;
+}
+/* END TOP NAVIGATION */
+/* END HEADER */
+
+
+/* BARBERSHOP-SHOP.HTML */
+/* MINE */
+/* BREAD */
 .breadcrumbs {
     font-size: 14px;
     font-weight: 700;
+    width: 960px;
+    margin-bottom: 60px;
+    /*shema*/
+    outline: 1px solid deeppink;
 }
-
+.breadcrumbs ul {
+    padding: 0;
+    margin: 0;
+    margin-left: 2px;
+}
+.breadcrumbs li {
+    display: inline-block;
+    margin-right: 40px;
+}
+.breadcrumbs li:last-child {
+    margin-right: 0;
+}
 .breadcrumbs a {
     text-decoration: none;
     color: #000000;
+
 }
-.active {
+.breadcrumbs a.active {
     color: #aba9a7;
+}
+/* END BREAD */
+/* FILTER FORM */
+.product_filter {
+    float: left;
+    width: 200px;
+    /*shema*/
+    outline: 1px solid deeppink;
+}
+.product_filter fieldset {
+    padding: 0;
+    border: none;
+    margin-left: 0;
+    margin-bottom: 50px;
 }
 .product_filter legend {
     font-size: 24px;
     font-weight: 700;
+    margin-left: 0;
 }
 .product_filter label {
     font-size: 14px;
     font-weight: 700;
 }
-
+.product_filter ul {
+    padding: 0;
+    margin: 0;
+}
+.product_filter li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
 .batton_show {
+    display: inline-block;
+    width: 112px;
+    height: 31px;
+    padding-top: 12px;
+    margin-left: 2px;
     background-color: #000000;
     text-decoration: none;
     color: #ffffff;
     font-size: 13px;
     font-weight: 700;
+    text-align: center;
 }
+/* END FILTER FORM */
+/* CONTENT */
+.content {
+    float: right;
+    width: 730px;
+    margin-bottom: 20px;
+    /*shema*/
+    outline: 1px solid fuchsia;
+}
+/* ITEMS */
+.items {
+    margin-bottom: 20px;
+}
+/* ARTICLE PRODUCTS ITEM */
 .products_item {
     font-size: 14px;
     font-weight: 700;
-
+    display: inline-block;
+    width: 220px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    /*shema*/
+    outline: 1px solid greenyellow;
+}
+.products_item img {
+    height: 164px;
+}
+.item_title {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.products_item span {
+    display: block;
 }
 .products_item a {
     text-decoration: none;
@@ -59,37 +183,182 @@ h2 {
 a>.item_title {
     color: #000000;
 }
-
+.add_to_cart_section {
+    height: 31px;
+    width: 188px;
+    padding-top: 12px;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    background-color: #e5e5e5;
+    text-align: center;
+}
 .button_buy {
+    display: inline-block;
+    float: right;
+    width: 78px;
+    height: 31px;
+    padding-top: 12px;
+    margin-top: -12px;
     background-color: #000000;
     text-decoration: none;
     color: #ffffff;
     font-size: 14px;
     font-weight: 700;
+    text-align: center;
 }
+/* END ARTICLE PRODUCTS ITEM */
+/* END ITEMS */
+/* PAGINATORS */
 .paginator {
     font-size: 14px;
     font-weight: 700;
+    margin-left: 10px;
+    margin-right: 10px;
+    /*shema*/
+    outline: 1px solid greenyellow;
 }
 .button_pages {
+    display: inline-block;
+    width: 43px;
+    height: 32px;
+    margin-right: 7px;
+    padding-top: 12px;
+    text-align: center;
     background-color: #000000;
     text-decoration: none;
     color: #ffffff;
 }
 .button_pages_active {
-    background-color: #ffffff;
+    display: inline-block;
+    width: 43px;
+    height: 32px;
+    margin-right: 7px;
+    padding-top: 12px;
+    text-align: center;
+    background-color: beige;
     text-decoration: none;
     color: #000000;
 }
-.contacts {
+/* END PAGINATORS */
+/* END CONTENT */
+/* END BARBERSHOP-SHOP.HTML */
+
+
+/* BARBERSHOP-ITEM.HTML */
+/* GALLERY */
+.img_preview{
+    float: left;
+    width: 480px;
+    /*shema*/
+    outline: 1px solid fuchsia;
+}
+.big_img img {
+    width: 480px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    /*shema*/
+    outline: 1px solid blue;
+}
+.preview {
+    width: 480px;
+    margin-bottom: 20px;
+    /*shema*/
+    outline: 1px solid darkorange;
+}
+.preview ul {
+    padding: 0;
+    margin: 0;
+}
+.preview li {
+    width: 139px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+
+    /*shema*/
+    outline: 1px solid lime;
+}
+.preview li:last-child {
+    margin-right: 0;
+}
+.preview img{
+    width: 139px;
+}
+/* END GALLERY */
+/* DESCRIPTION */
+.item_description {
+    float: right;
+    width: 400px;
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    color: black;
+    /*shema*/
+    outline: 1px solid fuchsia;
+}
+/* ABOUT */
+.about {
+    width: 380px;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 10px;
+    margin-bottom: 60px;
+    /*shema*/
+    outline: 1px solid gold;
+}
+.available {
+    display: inline-block;
+}
+.articul {
+    float: right;
+    color: #aeaeae;
+}
+/* END ABOUT */
+
+.consist {
+    width: 380px;
+    padding-left: 5px;
+    padding-right: 10px;
+    /*shema*/
+    outline: 1px solid rosybrown;
+}
+/* END DESCRIPTION */
+/* END BARBERSHOP-ITEM.HTML */
+
+
+/* FOOTER */
+.main_footer {
+    padding: 20px 0;
+    /*shema*/
+    outline: 1px solid blueviolet;
+}
+.contacts  {
     background-color: #212121;
     font-size: 14px;
     font-weight: 700;
     color: white;
+    float: left;
+    width: 311px;
+    margin-right: 90px;
+    /*shema*/
+    outline: 1px solid deeppink;
 }
 .contacts a {
     color: white;
     text-decoration: none
+}
+.social {
+    float: left;
+    width: 140px;
+    margin-right: 259px;
+    /*shema*/
+    outline: 1px solid deeppink;
 }
 .social_title {
     background-color: #212121;
@@ -98,6 +367,10 @@ a>.item_title {
     color: white;
 }
 .developed {
+    float: right;
+    width: 140px;
+    /*shema*/
+    outline: 1px solid deeppink;
     font-size: 14px;
     font-weight: 700;
 }
@@ -112,20 +385,4 @@ a>.item_title {
     font-size: 14px;
     font-weight: 700;
 }
-.item_description {
-    font-size: 14px;
-    font-weight: 700;
-    color: black;
-}
-.articul {
-    color: #aeaeae;
-}
-.big_img img {
-    width: 461px;
-}
-.small_img img{
-    width: 139px;
-}
-.products_item img {
-    width: 220px;
-}
+/* END FOOTER */
